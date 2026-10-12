@@ -1,0 +1,777 @@
+window.VINAMILK_PROFILE_DATA = {
+  "profileSummary": {
+    "code": "7900.001.23.DN.0300588569",
+    "branchCode": "7900",
+    "branchName": "Agribank Chi nhánh TP. Hồ Chí Minh",
+    "customerType": "DN",
+    "cif": "0300588569",
+    "createdDate": "2023-04-15",
+    "filingDate": "2023-04-20",
+    "fulfillmentDate": "2023-04-25",
+    "state": "ApprovedByApprovalCenter",
+    "stateText": "Đã phê duyệt tại Trung tâm Phê duyệt (Vượt thẩm quyền)",
+    "approvalResult": "Chấp thuận cấp tín dụng",
+    "approvalCenterName": "Trung tâm Phê duyệt Tín dụng Miền Nam - Agribank",
+    "beyondAppraisalType": "Vượt thẩm quyền Chi nhánh loại 1 (Hạn mức > 500 tỷ VNĐ)"
+  },
+  "businessEntity": {
+    "companyName": "CÔNG TY CỔ PHẦN SỮA VIỆT NAM",
+    "shortName": "VINAMILK",
+    "englishName": "VIETNAM DAIRY PRODUCTS JOINT STOCK COMPANY",
+    "stockTicker": "VNM (HOSE)",
+    "cif": "0300588569",
+    "businessLicense": "0300588569",
+    "licenseIssueDate": "2003-11-20",
+    "licenseLatestChangeDate": "2022-12-27",
+    "licenseIssuer": "Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh (Đăng ký thay đổi lần thứ 33)",
+    "businessAddress": "Số 10 Tân Trào, Phường Tân Phú, Quận 7, TP. Hồ Chí Minh",
+    "phoneNumber": "(84-28) 54 155 555",
+    "fax": "(84-28) 54 161 226",
+    "email": "vinamilk@vinamilk.com.vn",
+    "website": "https://www.vinamilk.com.vn",
+    "charterCapital": 20899554450000,
+    "charterCapitalInWords": "Hai mươi nghìn tám trăm chín mươi chín tỷ năm trăm năm mươi tư triệu bốn trăm năm mươi nghìn đồng",
+    "totalShares": 2089955445,
+    "mainBusinessSector": "Chế biến sữa và các sản phẩm từ sữa; Chăn nuôi bò sữa; Bán buôn thực phẩm",
+    "legalRepresentatives": [
+      {
+        "fullName": "Bà Mai Kiều Liên",
+        "title": "Thành viên HĐQT kiêm Tổng Giám đốc",
+        "birthYear": 1953,
+        "idNumber": "079153001289",
+        "idIssueDate": "2021-05-10",
+        "idIssuePlace": "Cục Cảnh sát QLHC về TTXH",
+        "nationality": "Việt Nam",
+        "roleInLoan": "Người đại diện theo pháp luật ký kết Hợp đồng tín dụng"
+      },
+      {
+        "fullName": "Ông Nguyễn Hạnh Phúc",
+        "title": "Chủ tịch Hội đồng Quản trị",
+        "birthYear": 1959,
+        "idNumber": "001059000862",
+        "idIssueDate": "2021-06-15",
+        "idIssuePlace": "Cục Cảnh sát QLHC về TTXH",
+        "nationality": "Việt Nam",
+        "roleInLoan": "Đại diện phần vốn Nhà nước (SCIC)"
+      }
+    ],
+    "chiefAccountant": {
+      "fullName": "Ông Lê Thành Liêm",
+      "title": "Giám đốc Điều hành Tài chính kiêm Kế toán trưởng",
+      "appointmentDecision": "Nghị quyết HĐQT số 05/NQ-CTS.HĐQT/2015"
+    },
+    "majorShareholders": [
+      {
+        "name": "Tổng công ty Đầu tư và Kinh doanh Vốn Nhà nước (SCIC)",
+        "shares": 752476602,
+        "percent": 36.0,
+        "type": "Cổ đông Nhà nước"
+      },
+      {
+        "name": "F&N Dairy Investments Pte. Ltd (Singapore)",
+        "shares": 369753803,
+        "percent": 17.69,
+        "type": "Nhà đầu tư nước ngoài"
+      },
+      {
+        "name": "Platinum Victory Pte. Ltd (Singapore)",
+        "shares": 221856553,
+        "percent": 10.62,
+        "type": "Nhà đầu tư nước ngoài"
+      },
+      {
+        "name": "F&Nbev Manufacturing Pte. Ltd",
+        "shares": 56428797,
+        "percent": 2.7,
+        "type": "Nhà đầu tư nước ngoài"
+      },
+      {
+        "name": "Các cổ đông khác (tổ chức & cá nhân trong, ngoài nước)",
+        "shares": 689440690,
+        "percent": 32.99,
+        "type": "Đại chúng"
+      }
+    ],
+    "relatedParties": [
+      {
+        "name": "Công ty Cổ phần Giống bò sữa Mộc Châu (MCM)",
+        "relation": "Công ty con (sở hữu gián tiếp qua Vilico)",
+        "ownershipPercent": 59.3
+      },
+      {
+        "name": "Tổng công ty Chăn nuôi Việt Nam - CTCP (Vilico)",
+        "relation": "Công ty con",
+        "ownershipPercent": 68.0
+      },
+      {
+        "name": "Driftwood Dairy Holding Corporation (Hoa Kỳ)",
+        "relation": "Công ty con 100% vốn tại Mỹ",
+        "ownershipPercent": 100.0
+      },
+      {
+        "name": "Angkor Dairy Products Co., Ltd (Campuchia)",
+        "relation": "Công ty con 100% vốn tại Campuchia",
+        "ownershipPercent": 100.0
+      },
+      {
+        "name": "Công ty TNHH Bò Sữa Việt Nam",
+        "relation": "Công ty con vận hành hệ thống trang trại",
+        "ownershipPercent": 100.0
+      }
+    ]
+  },
+  "financialReport": {
+    "auditor": "Công ty TNHH KPMG Việt Nam (Thành viên KPMG Quốc tế)",
+    "auditOpinion": "Ý kiến chấp nhận toàn phần (BCTC phản ánh trung thực và hợp lý trên các khía cạnh trọng yếu)",
+    "auditDate": "2024-02-28",
+    "reportingCurrency": "VND",
+    "year2023": {
+      "netRevenue": 60374459000000,
+      "grossProfit": 24585171000000,
+      "grossMarginPercent": 40.72,
+      "financialIncome": 1688423000000,
+      "financialExpenses": 612870000000,
+      "interestExpense": 338500000000,
+      "sellingExpenses": 12980125000000,
+      "generalAdminExpenses": 1712955000000,
+      "operatingProfit": 10968188000000,
+      "profitBeforeTax": 10968188000000,
+      "currentIncomeTax": 1948721000000,
+      "profitAfterTax": 9019467000000,
+      "netMarginPercent": 14.94,
+      "totalAssets": 53227487000000,
+      "currentAssets": 35678240000000,
+      "cashAndCashEquivalents": 2677300000000,
+      "shortTermInvestments": 20370000000000,
+      "shortTermReceivables": 6133520000000,
+      "inventories": 5618420000000,
+      "nonCurrentAssets": 17549247000000,
+      "fixedAssets": 14288540000000,
+      "constructionInProgress": 1100250000000,
+      "totalLiabilities": 17481160000000,
+      "currentLiabilities": 17132660000000,
+      "shortTermBorrowings": 8440000000000,
+      "accountsPayable": 4321000000000,
+      "nonCurrentLiabilities": 348500000000,
+      "longTermBorrowings": 150000000000,
+      "equity": 35746327000000,
+      "charterCapital": 20899554450000,
+      "developmentInvestmentFund": 5580000000000,
+      "undistributedProfits": 4640000000000,
+      "operatingCashFlow": 9845000000000,
+      "debtToAssetsRatio": 0.328,
+      "debtToEquityRatio": 0.489,
+      "currentRatio": 2.08,
+      "quickRatio": 1.75,
+      "interestCoverageRatio": 33.4
+    },
+    "year2022": {
+      "netRevenue": 59925200000000,
+      "grossProfit": 23880000000000,
+      "profitBeforeTax": 10496000000000,
+      "profitAfterTax": 8578000000000,
+      "totalAssets": 48482000000000,
+      "totalLiabilities": 15666000000000,
+      "shortTermBorrowings": 4900000000000,
+      "equity": 32816000000000
+    }
+  },
+  "loanProposal": {
+    "loanPurpose": "Tài trợ hạn mức vốn lưu động phục vụ hoạt động sản xuất kinh doanh sữa năm 2023-2024: Thu mua sữa tươi nguyên liệu từ mạng lưới nông hộ/trang trại sinh thái và nhập khẩu nguyên phụ liệu bột sữa chất lượng cao",
+    "creditMethod": "Cho vay theo hạn mức tín dụng (Vốn lưu động)",
+    "proposedAmount": 3000000000000,
+    "proposedAmountInWords": "Ba nghìn tỷ đồng",
+    "approvedAmount": 3000000000000,
+    "approvedAmountInWords": "Ba nghìn tỷ đồng",
+    "currency": "VND",
+    "creditTermMonths": 12,
+    "debtReceivingTermMax": 6,
+    "interestRate": "Lãi suất thả nổi cạnh tranh theo quy định hiện hành của Agribank dành cho khách hàng Doanh nghiệp lớn nhóm AAA (tại thời điểm đề xuất: 6.5%/năm)",
+    "financingRatio": "Tối đa 70% tổng nhu cầu vốn lưu động hợp lý của chu kỳ sản xuất",
+    "repaymentSource": "Dòng tiền thu từ bán hàng nội địa (kênh truyền thống GT, siêu thị MT, chuỗi cửa hàng Giấc mơ sữa Việt) và xuất khẩu sữa sang các thị trường Trung Đông, Trung Quốc, Đông Nam Á"
+  },
+  "collateralAssets": [
+    {
+      "code": "TS01",
+      "name": "Nhà máy Sữa Việt Nam (Mega Market Bình Dương)",
+      "type": "Bất động sản công nghiệp & Dây chuyền sản xuất tự động",
+      "location": "Lô CN6, Đường D1, KCN Mỹ Phước 2, Thị xã Bến Cát, Tỉnh Bình Dương",
+      "legalDocuments": "Giấy chứng nhận QSD đất số BB 987654 do UBND tỉnh Bình Dương cấp ngày 15/06/2012; Giấy phép xây dựng số 88/GPXD",
+      "appraisedValue": 4200000000000,
+      "appraisalUnit": "Công ty Thẩm định giá độc lập VinaControl & Tổ thẩm định TSBĐ Agribank Chi nhánh TP.HCM",
+      "maxFinancingRate": 70,
+      "acceptedCreditValue": 2940000000000,
+      "insuranceStatus": "Đã mua bảo hiểm mọi rủi ro tài sản tại Bảo hiểm PJICO/Bảo Việt, giá trị bảo hiểm 4.500 tỷ VNĐ, đã chuyển quyền thụ hưởng cho Agribank"
+    },
+    {
+      "code": "TS02",
+      "name": "Số dư tiền gửi có kỳ hạn tại Agribank",
+      "type": "Hợp đồng tiền gửi / Giấy tờ có giá",
+      "location": "Agribank Chi nhánh TP. Hồ Chí Minh",
+      "legalDocuments": "Hợp đồng tiền gửi số 7900-TGKH-2023/01 ngày 10/01/2023",
+      "appraisedValue": 1500000000000,
+      "appraisalUnit": "Agribank Chi nhánh TP. Hồ Chí Minh",
+      "maxFinancingRate": 95,
+      "acceptedCreditValue": 1425000000000,
+      "insuranceStatus": "Không áp dụng"
+    }
+  ],
+  "loanConditions": [
+    {
+      "type": "Tiên quyết (Trước khi ký HĐTD)",
+      "content": "Có Nghị quyết hợp lệ của Hội đồng Quản trị Vinamilk phê duyệt việc vay vốn hạn mức 3.000 tỷ VNĐ và thế chấp TSBĐ tại Agribank Chi nhánh TP.HCM",
+      "status": "Đã đáp ứng (Nghị quyết HĐQT số 12/NQ-CTS.HĐQT/2023)"
+    },
+    {
+      "type": "Trước khi giải ngân từng lần",
+      "content": "Hoàn tất thủ tục đăng ký giao dịch bảo đảm đối với TSBĐ là Nhà máy Sữa Bình Dương tại Văn phòng Đăng ký Đất đai tỉnh Bình Dương",
+      "status": "Đã đáp ứng"
+    },
+    {
+      "type": "Trước khi giải ngân từng lần",
+      "content": "Cung cấp đầy đủ Hợp đồng kinh tế đầu vào, hóa đơn VAT, chứng từ chứng minh mục đích sử dụng vốn vay hợp pháp",
+      "status": "Cam kết theo từng đợt rút vốn"
+    },
+    {
+      "type": "Trong thời gian duy trì hạn mức",
+      "content": "Duy trì số dư tiền gửi bình quân và doanh thu thanh toán qua tài khoản mở tại Agribank tối thiểu 25% tổng doanh thu bán hàng của doanh nghiệp",
+      "status": "Đang theo dõi giám sát"
+    },
+    {
+      "type": "Sau giải ngân / Định kỳ",
+      "content": "Cung cấp BCTC bán niên được soát xét và BCTC năm được kiểm toán bởi công ty kiểm toán Big4 (KPMG/PwC/EY/Deloitte) trong vòng 90 ngày kể từ kết thúc kỳ kế toán",
+      "status": "Đã cam kết trong HĐTD"
+    }
+  ],
+  "documentTree": [
+    {
+      "code": "A",
+      "name": "Hồ sơ pháp lý",
+      "documents": [
+        {
+          "code": "A.1.1",
+          "name": "Giấy chứng nhận đăng ký doanh nghiệp (ĐKKD lần 33)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A11_01.pdf",
+          "size": "2.4 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "A.1.2",
+          "name": "Giấy chứng nhận cơ sở đủ điều kiện ATVSTP & FSSC 22000",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A12_01.pdf",
+          "size": "2.23 MB (38 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (HOSE)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "A.1.4",
+          "name": "Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A14_01.pdf",
+          "size": "8.5 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "A.1.5",
+          "name": "Nghị quyết HĐQT bổ nhiệm Tổng Giám đốc (Bà Mai Kiều Liên)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A15_01.pdf",
+          "size": "1.2 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "A.1.6",
+          "name": "Quyết định bổ nhiệm Kế toán trưởng (Ông Lê Thành Liêm)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A16_01.pdf",
+          "size": "0.9 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "A.1.8",
+          "name": "Danh sách cổ đông lớn, HĐQT, Ban Điều hành (Báo cáo thường niên)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A18_01.pdf",
+          "size": "1.92 MB (17 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (HOSE)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "A.1.9",
+          "name": "Bảng kê khai thông tin về người có liên quan (35 công ty con)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A19_01.pdf",
+          "size": "1.92 MB (17 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (HOSE)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "A.2.1",
+          "name": "Căn cước công dân người đại diện theo pháp luật (Bà Mai Kiều Liên)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_A21_01.pdf",
+          "size": "1.1 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Hồ sơ kinh tế",
+      "documents": [
+        {
+          "code": "B.1",
+          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2023 (KPMG kiểm toán)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_B1_01.pdf",
+          "size": "7.80 MB (22 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (KPMG)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "B.1_2022",
+          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2022 (KPMG kiểm toán)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_B1_02.pdf",
+          "size": "7.26 MB (172 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (BCTN)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "B.2",
+          "name": "Báo cáo tài chính hợp nhất Quý gần nhất",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_B2_01.pdf",
+          "size": "7.80 MB (22 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (BCTC)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "B.3",
+          "name": "Bảng kê chi tiết các khoản phải thu, hàng tồn kho >10% tổng tài sản",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_B3_01.pdf",
+          "size": "2.7 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Hồ sơ vay vốn",
+      "documents": [
+        {
+          "code": "C.I.1.1",
+          "name": "Phương án sử dụng vốn lưu động năm 2023-2024",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_CI11_01.pdf",
+          "size": "3.5 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "C.I.1.2",
+          "name": "Nghị quyết HĐQT Vinamilk phê duyệt vay vốn hạn mức tại Agribank",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_CI12_01.pdf",
+          "size": "1.24 MB (17 trang)",
+          "isRealData": true,
+          "source": "Bản gốc công khai (ĐHĐCĐ)",
+          "isOfficialPublicDoc": true
+        },
+        {
+          "code": "C.I.1.3",
+          "name": "Hợp đồng kinh tế nguyên tắc đầu vào (Tetra Pak) & đầu ra (Co.opmart)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_CI13_01.pdf",
+          "size": "5.2 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "name": "Hồ sơ tài sản bảo đảm tiền vay",
+      "documents": [
+        {
+          "code": "D.1",
+          "name": "Giấy chứng nhận QSD đất & sở hữu công trình Nhà máy Sữa Bình Dương",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_D1_01.pdf",
+          "size": "4.2 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "D.3",
+          "name": "Báo cáo kết quả thẩm định TSBĐ của Tổ thẩm định Chi nhánh",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_D3_01.pdf",
+          "size": "2.1 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "D.5",
+          "name": "Giấy chứng nhận bảo hiểm tài sản Nhà máy Sữa Mega Market (PJICO)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_D5_01.pdf",
+          "size": "1.9 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        },
+        {
+          "code": "D.6",
+          "name": "Chứng thư thẩm định giá độc lập VinaControl số 128/CT-TĐG",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_D6_01.pdf",
+          "size": "3.8 MB",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập theo hồ sơ thực"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "name": "Hồ sơ do Chi nhánh lập",
+      "documents": [
+        {
+          "code": "E.1.1",
+          "name": "Bản in tra cứu thông tin CIC Doanh nghiệp Vinamilk",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_E11_01.pdf",
+          "size": "1.4 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "E.2",
+          "name": "Phiếu chấm điểm xếp hạng tín dụng nội bộ Agribank (Xếp hạng AAA)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_E2_01.pdf",
+          "size": "1.0 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "E.3",
+          "name": "Báo cáo đề xuất cấp tín dụng hạn mức của Phòng KHDN",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_E3_01.pdf",
+          "size": "4.8 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "E.4",
+          "name": "Biên bản họp Hội đồng tín dụng cơ sở Chi nhánh TP.HCM",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_E4_01.pdf",
+          "size": "1.8 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "E.5",
+          "name": "Tờ trình phê duyệt khoản vay vượt thẩm quyền số 45/TTr-NHNo.HCM",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_E5_01.pdf",
+          "size": "3.2 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        }
+      ]
+    },
+    {
+      "code": "F",
+      "name": "Hồ sơ do Trung tâm Phê duyệt lập",
+      "documents": [
+        {
+          "code": "F.1",
+          "name": "Báo cáo thẩm định lại độc lập của Chuyên viên TTPD Miền Nam",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_F1_01.pdf",
+          "size": "5.6 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "F.2",
+          "name": "Ý kiến thẩm định Pháp chế & Đánh giá kiểm tra giám sát tuân thủ",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_F2_01.pdf",
+          "size": "2.4 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "F.3",
+          "name": "Biên bản họp Hội đồng phê duyệt tín dụng TTPD Miền Nam số 89/BB-HĐPD",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_F3_01.pdf",
+          "size": "2.0 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "F.4",
+          "name": "Thông báo phê duyệt cấp tín dụng vượt thẩm quyền số 120/TB-TTPD",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_F4_01.pdf",
+          "size": "2.6 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        }
+      ]
+    },
+    {
+      "code": "G",
+      "name": "Thông báo - Thư công tác",
+      "documents": [
+        {
+          "code": "G.1",
+          "name": "Công văn yêu cầu bổ sung giải trình thuyết minh chi phí sản xuất",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_G1_01.pdf",
+          "size": "0.8 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "G.2",
+          "name": "Công văn phản hồi giải trình của Giám đốc Agribank Chi nhánh TP.HCM",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_G2_01.pdf",
+          "size": "1.1 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        }
+      ]
+    },
+    {
+      "code": "H",
+      "name": "Bộ hồ sơ trong giai đoạn giải ngân",
+      "documents": [
+        {
+          "code": "H.1",
+          "name": "Giấy đề nghị rút vốn kiêm khế ước nhận nợ đợt 1 (500 tỷ VNĐ)",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_H1_01.pdf",
+          "size": "1.5 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "H.2",
+          "name": "Báo cáo kiểm tra điều kiện giải ngân của Kiểm soát viên tín dụng",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_H2_01.pdf",
+          "size": "1.3 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "H.3",
+          "name": "Hợp đồng tín dụng hạn mức số 7900-LMS-2023/VNM và Hợp đồng thế chấp",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_H3_01.pdf",
+          "size": "6.8 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        }
+      ]
+    },
+    {
+      "code": "I",
+      "name": "Bộ hồ sơ trong giai đoạn thu nợ, quản lý nợ",
+      "documents": [
+        {
+          "code": "I.1",
+          "name": "Biên bản kiểm tra sử dụng vốn vay lần đầu sau 30 ngày giải ngân",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_I1_01.pdf",
+          "size": "2.2 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        },
+        {
+          "code": "I.3",
+          "name": "Báo cáo giám sát định kỳ chất lượng tín dụng quý 3/2023",
+          "fileCount": 1,
+          "fileName": "790000123DN0300588569_I3_01.pdf",
+          "size": "1.7 MB",
+          "isRealData": false,
+          "isOfficialPublicDoc": false,
+          "source": "Giả lập nghiệp vụ NH"
+        }
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "role": "Cán bộ quan hệ khách hàng",
+      "fullName": "Trần Thanh Phong",
+      "org": "Phòng KHDN - Agribank CN TP.HCM"
+    },
+    {
+      "role": "Trưởng phòng KHDN",
+      "fullName": "Lê Văn Hùng",
+      "org": "Phòng KHDN - Agribank CN TP.HCM"
+    },
+    {
+      "role": "Giám đốc Chi nhánh",
+      "fullName": "Nguyễn Hoàng Minh",
+      "org": "Ban Giám đốc - Agribank CN TP.HCM"
+    },
+    {
+      "role": "Lãnh đạo phân công TTPD",
+      "fullName": "Đỗ Quang Vinh",
+      "org": "Ban Giám đốc - TTPD Miền Nam"
+    },
+    {
+      "role": "Chuyên viên thẩm định lại",
+      "fullName": "Phạm Quốc Tuấn",
+      "org": "Phòng Thẩm định - TTPD Miền Nam"
+    },
+    {
+      "role": "Chuyên viên Pháp chế",
+      "fullName": "Nguyễn Thị Mai Anh",
+      "org": "Tổ Pháp chế - TTPD Miền Nam"
+    },
+    {
+      "role": "Chủ tịch Hội đồng Tín dụng TTPD",
+      "fullName": "Vũ Đình Trọng",
+      "org": "Hội đồng Thẩm định & Phê duyệt Tín dụng"
+    }
+  ],
+  "logs": [
+    {
+      "time": "2023-04-15 08:30:00",
+      "actor": "Trần Thanh Phong (CN)",
+      "action": "Khởi tạo hồ sơ tín dụng pháp nhân VNM"
+    },
+    {
+      "time": "2023-04-18 14:20:00",
+      "actor": "Nguyễn Hoàng Minh (GĐ CN)",
+      "action": "Ký Tờ trình vượt thẩm quyền và chuyển hồ sơ lên TTPD"
+    },
+    {
+      "time": "2023-04-20 09:15:00",
+      "actor": "Đỗ Quang Vinh (TTPD)",
+      "action": "Tiếp nhận hồ sơ và phân công Chuyên viên thẩm định lại Phạm Quốc Tuấn"
+    },
+    {
+      "time": "2023-04-23 16:45:00",
+      "actor": "Phạm Quốc Tuấn (TTPD)",
+      "action": "Hoàn thành Báo cáo thẩm định lại độc lập, trình HĐTD"
+    },
+    {
+      "time": "2023-04-25 10:00:00",
+      "actor": "Hội đồng Tín dụng TTPD",
+      "action": "Họp biểu quyết 5/5 chấp thuận cấp hạn mức 3.000 tỷ VNĐ"
+    },
+    {
+      "time": "2023-04-25 15:30:00",
+      "actor": "Vũ Đình Trọng (Chủ tịch HĐTD)",
+      "action": "Ký ban hành Thông báo phê duyệt cấp tín dụng vượt thẩm quyền số 120/TB-TTPD"
+    }
+  ],
+  "publicDocuments": [
+    {
+      "code": "A.1.2",
+      "name": "Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam",
+      "fileName": "VNM_Dieu_Le_Cong_Ty_CP_Sua_Viet_Nam.pdf",
+      "path": "public_documents/VNM_Dieu_Le_Cong_Ty_CP_Sua_Viet_Nam.pdf",
+      "pageCount": 38,
+      "size": "2.23 MB",
+      "source": "Công bố thông tin chính thức HOSE & Vinamilk IR"
+    },
+    {
+      "code": "B.1",
+      "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2023",
+      "fileName": "VNM_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2023.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2023.pdf",
+      "pageCount": 22,
+      "size": "7.80 MB",
+      "source": "Kiểm toán độc lập KPMG Việt Nam - Công bố thông tin HOSE"
+    },
+    {
+      "code": "B.1_2022",
+      "name": "Báo cáo thường niên & Báo cáo tài chính kiểm toán năm 2022",
+      "fileName": "VNM_Bao_Cao_Thuong_Nien_Va_BCTC_Kiem_Toan_2022.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Thuong_Nien_Va_BCTC_Kiem_Toan_2022.pdf",
+      "pageCount": 172,
+      "size": "7.26 MB",
+      "source": "Báo cáo thường niên chính thức công bố bởi Vinamilk"
+    },
+    {
+      "code": "A.1.8_A.1.9",
+      "name": "Báo cáo tình hình quản trị công ty năm 2023 (HĐQT, Cổ đông lớn, Người có liên quan)",
+      "fileName": "VNM_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2023.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2023.pdf",
+      "pageCount": 17,
+      "size": "1.92 MB",
+      "source": "Báo cáo quản trị công ty gửi UBCKNN & HOSE"
+    },
+    {
+      "code": "C.I.1.2",
+      "name": "Nghị quyết Đại hội đồng Cổ đông thường niên năm 2023 (Số 01/NQ-CTS.ĐHĐCĐ/2023)",
+      "fileName": "VNM_Nghi_Quyet_DHDCD_Thuong_Nien_2023.pdf",
+      "path": "public_documents/VNM_Nghi_Quyet_DHDCD_Thuong_Nien_2023.pdf",
+      "pageCount": 17,
+      "size": "1.24 MB",
+      "source": "Nghị quyết ĐHĐCĐ Vinamilk công bố chính thức"
+    },
+    {
+      "code": "CBTT",
+      "name": "Bản công bố thông tin chính thức gửi UBCKNN & HOSE",
+      "fileName": "VNM_Cong_Bo_Thong_Tin_Chinh_Thuc_HOSE.pdf",
+      "path": "public_documents/VNM_Cong_Bo_Thong_Tin_Chinh_Thuc_HOSE.pdf",
+      "pageCount": 6,
+      "size": "1.86 MB",
+      "source": "Hệ thống công bố thông tin Sở GDCK TP.HCM (HOSE)"
+    }
+  ]
+};

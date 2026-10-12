@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Hồ sơ Tín dụng Pháp nhân (CTCP Sữa Việt Nam - Vinamilk)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="top-header">
+    <div class="brand">
+      <div class="brand-badge">AGRIBANK</div>
+      <div class="brand-title">HỆ THỐNG PHÊ DUYỆT & THẨM ĐỊNH TÍN DỤNG TẬP TRUNG</div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="main-wrapper">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container">
+      <ul class="breadcrumb">
+        <li><a href="javascript:void(0)"><i class="fas fa-users"></i> Khách hàng</a></li>
+        <li><a href="javascript:void(0)">Hồ sơ tín dụng</a></li>
+        <li><a href="javascript:void(0)">Pháp nhân</a></li>
+        <li class="active">Chi tiết: CÔNG TY CỔ PHẦN SỮA VIỆT NAM (Mã: 7900.001.23.DN.0300588569)</li>
+      </ul>
+    </div>
+
+    <!-- Action Toolbar Buttons -->
+    <div class="toolbar-actions">
+      <button class="btn btn-primary" onclick="alert('Đã lưu dữ liệu hồ sơ vào hệ thống!');">
+        <i class="fas fa-save"></i> Lưu hồ sơ
+      </button>
+      <button class="btn btn-outline-primary" onclick="alert('Hồ sơ đang ở trạng thái Đã phê duyệt.');">
+        <i class="fas fa-share-square"></i> Chuyển cấp trên
+      </button>
+      <button class="btn btn-success" onclick="alert('Hồ sơ đã được phê duyệt chính thức với Hạn mức 3.000 tỷ VNĐ.');">
+        <i class="fas fa-check-double"></i> Phê duyệt
+      </button>
+      <button class="btn btn-outline-secondary" onclick="alert('Triệu tập Hội đồng Tín dụng TTPD.');">
+        <i class="fas fa-gavel"></i> Triệu tập HĐTD
+      </button>
+      <button class="btn btn-info" id="btnPrintProfile">
+        <i class="fas fa-print"></i> In tờ trình
+      </button>
+      <a href="data/Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx" download="Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx" class="btn btn-warning" style="text-decoration: none;">
+        <i class="fas fa-file-excel"></i> Xuất kết quả rà soát Moody's (XLSX)
+      </a>
+      <button class="btn btn-outline-success" id="btnGoToPublicDocs">
+        <i class="fas fa-archive"></i> Kho hồ sơ công khai (6 tài liệu gốc HOSE)
+      </button>
+      <button class="btn btn-outline-primary btn-right" id="btnExportJson">
+        <i class="fas fa-download"></i> Xuất dữ liệu JSON (vinamilk_profile_data.json)
+      </button>
+    </div>
+
+    <!-- Alert Box -->
+    <div class="alert-box alert-success">
+      <i class="fas fa-shield-alt" style="font-size: 16px; margin-top: 1px;"></i>
+      <div>
+        <strong>Hồ sơ Vượt thẩm quyền đã hoàn thiện đầy đủ dữ liệu:</strong>
+        Toàn bộ thông tin Pháp lý, BCTC kiểm toán KPMG, Hạn mức vay 3.000 tỷ VNĐ và 9 nhóm tài liệu (A đến I) đã được đối soát đồng nhất 100%, sẵn sàng cho quá trình kiểm thử mô hình AI (OCR, đối soát chéo và thẩm định tín dụng).
+      </div>
+    </div>
+
+    <!-- 8 Main Navigation Tabs -->
+    <div class="tab-navigation">
+      <button class="tab-btn active" data-tab="tab-business-entity">
+        <i class="fas fa-building"></i> Thông tin pháp lý
+      </button>
+      <button class="tab-btn" data-tab="tab-credit-report">
+        <i class="fas fa-chart-line"></i> Thông tin kinh tế (BCTC)
+      </button>
+      <button class="tab-btn" data-tab="tab-loan-purpose">
+        <i class="fas fa-bullseye"></i> Phương án sử dụng vốn
+      </button>
+      <button class="tab-btn" data-tab="tab-collateral">
+        <i class="fas fa-warehouse"></i> Tài sản bảo đảm
+      </button>
+      <button class="tab-btn" data-tab="tab-proposal">
+        <i class="fas fa-hand-holding-usd"></i> Đề xuất vay vốn
+      </button>
+      <button class="tab-btn" data-tab="tab-additional">
+        <i class="fas fa-info-circle"></i> Thông tin chung & bổ sung
+      </button>
+      <button class="tab-btn" data-tab="tab-approvement">
+        <i class="fas fa-clipboard-check"></i> Phê duyệt & Điều kiện
+      </button>
+      <button class="tab-btn" data-tab="tab-documents">
+        <i class="fas fa-folder-open"></i> Hồ sơ đính kèm (A - I)
+      </button>
+    </div>
+
+    <!-- Tab Contents -->
+    <div id="tab-business-entity" class="tab-content active">
+      <div id="TabBusinessEntityContent"></div>
+    </div>
+
+    <div id="tab-credit-report" class="tab-content">
+      <div id="TabBusinessCreditReportContent"></div>
+    </div>
+
+    <div id="tab-loan-purpose" class="tab-content">
+      <div id="TabLoanPurposeContent"></div>
+    </div>
+
+    <div id="tab-collateral" class="tab-content">
+      <div id="TabCollateralAssetContent"></div>
+    </div>
+
+    <div id="tab-proposal" class="tab-content">
+      <div id="TabProposalForLoanContent"></div>
+    </div>
+
+    <div id="tab-additional" class="tab-content">
+      <div id="TabAddtionalInformationContent"></div>
+    </div>
+
+    <div id="tab-approvement" class="tab-content">
+      <div id="TabApprovementContent"></div>
+    </div>
+
+    <div id="tab-documents" class="tab-content">
+      <div id="TabDocumentListContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal Preview Document Scan -->
+  <div class="modal" id="previewModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="modalDocTitle"><i class="fas fa-file-pdf"></i> Bản xem trước Scan</div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <a id="modalExternalLink" href="#" target="_blank" class="btn btn-sm" style="background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; text-decoration: none; border-radius: 4px; padding: 4px 10px; display: none;">
+            <i class="fas fa-external-link-alt"></i> Mở tab riêng
+          </a>
+          <button class="modal-close" id="modalCloseBtn" title="Đóng">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <div class="scan-paper" id="modalPaperContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
