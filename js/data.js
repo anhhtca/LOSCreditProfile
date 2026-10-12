@@ -1,15 +1,15 @@
-window.VINAMILK_PROFILE_DATA = {
+const vinamilkProfileData = {
   "profileSummary": {
-    "code": "7900.001.23.DN.0300588569",
+    "code": "7900.001.26.DN.0300588569",
     "branchCode": "7900",
     "branchName": "Agribank Chi nhánh TP. Hồ Chí Minh",
     "customerType": "DN",
     "cif": "0300588569",
-    "createdDate": "2023-04-15",
-    "filingDate": "2023-04-20",
-    "fulfillmentDate": "2023-04-25",
+    "createdDate": "2026-04-15",
+    "filingDate": "2026-04-20",
+    "fulfillmentDate": "2026-04-25",
     "state": "ApprovedByApprovalCenter",
-    "stateText": "Đã phê duyệt tại Trung tâm Phê duyệt (Vượt thẩm quyền)",
+    "stateText": "Đã phê duyệt tại Trung tâm Phê duyệt (Vượt thẩm quyền - Niên độ 2025-2026)",
     "approvalResult": "Chấp thuận cấp tín dụng",
     "approvalCenterName": "Trung tâm Phê duyệt Tín dụng Miền Nam - Agribank",
     "beyondAppraisalType": "Vượt thẩm quyền Chi nhánh loại 1 (Hạn mức > 500 tỷ VNĐ)"
@@ -22,8 +22,8 @@ window.VINAMILK_PROFILE_DATA = {
     "cif": "0300588569",
     "businessLicense": "0300588569",
     "licenseIssueDate": "2003-11-20",
-    "licenseLatestChangeDate": "2022-12-27",
-    "licenseIssuer": "Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh (Đăng ký thay đổi lần thứ 33)",
+    "licenseLatestChangeDate": "2024-06-25",
+    "licenseIssuer": "Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh (Đăng ký thay đổi lần thứ 34)",
     "businessAddress": "Số 10 Tân Trào, Phường Tân Phú, Quận 7, TP. Hồ Chí Minh",
     "phoneNumber": "(84-28) 54 155 555",
     "fax": "(84-28) 54 161 226",
@@ -123,7 +123,7 @@ window.VINAMILK_PROFILE_DATA = {
   "financialReport": {
     "auditor": "Công ty TNHH KPMG Việt Nam (Thành viên KPMG Quốc tế)",
     "auditOpinion": "Ý kiến chấp nhận toàn phần (BCTC phản ánh trung thực và hợp lý trên các khía cạnh trọng yếu)",
-    "auditDate": "2024-02-28",
+    "auditDate": "2026-02-28",
     "reportingCurrency": "VND",
     "year2023": {
       "netRevenue": 60374459000000,
@@ -174,10 +174,114 @@ window.VINAMILK_PROFILE_DATA = {
       "totalLiabilities": 15666000000000,
       "shortTermBorrowings": 4900000000000,
       "equity": 32816000000000
+    },
+    "year2025": {
+      "netRevenue": 63645886756227,
+      "grossProfit": 26209474194531,
+      "grossMarginPercent": 41.18,
+      "financialIncome": 1496851902188,
+      "financialExpenses": 350234100207,
+      "interestExpense": 215400000000,
+      "sellingExpenses": 13641689163684,
+      "generalAdminExpenses": 1904069825709,
+      "operatingProfit": 11659774989463,
+      "profitBeforeTax": 11649985224938,
+      "currentIncomeTax": 2236395492469,
+      "profitAfterTax": 9413589732469,
+      "parentProfitAfterTax": 9410201646692,
+      "netMarginPercent": 14.79,
+      "totalAssets": 53312340717301,
+      "currentAssets": 36261180908033,
+      "cashAndCashEquivalents": 1794879718871,
+      "shortTermInvestments": 21354863600460,
+      "shortTermReceivables": 6027719081073,
+      "inventories": 6839279842936,
+      "nonCurrentAssets": 17051159809268,
+      "fixedAssets": 12648916412221,
+      "constructionInProgress": 1245000000000,
+      "totalLiabilities": 18829355431194,
+      "currentLiabilities": 18520286019795,
+      "shortTermBorrowings": 8950000000000,
+      "accountsPayable": 4620000000000,
+      "nonCurrentLiabilities": 309069411399,
+      "longTermBorrowings": 120000000000,
+      "equity": 30685382906886,
+      "charterCapital": 20899554450000,
+      "developmentInvestmentFund": 5612000000000,
+      "undistributedProfits": 3471224745772,
+      "operatingCashFlow": 10520000000000,
+      "debtToAssetsRatio": 0.3532,
+      "debtToEquityRatio": 0.6136,
+      "currentRatio": 1.96,
+      "quickRatio": 1.59,
+      "interestCoverageRatio": 54.1,
+      "eps": 4028,
+      "roe": 30.67,
+      "roa": 17.65
+    },
+    "year2024": {
+      "netRevenue": 61782609528445,
+      "grossProfit": 25590176323124,
+      "grossMarginPercent": 41.42,
+      "financialIncome": 1585660836067,
+      "financialExpenses": 428238548859,
+      "interestExpense": 268500000000,
+      "sellingExpenses": 13357706796806,
+      "generalAdminExpenses": 1827916838987,
+      "operatingProfit": 11593977638387,
+      "profitBeforeTax": 11599653741335,
+      "currentIncomeTax": 2146760751387,
+      "profitAfterTax": 9452892989948,
+      "parentProfitAfterTax": 9392310356250,
+      "netMarginPercent": 15.3,
+      "totalAssets": 55049061537061,
+      "currentAssets": 37553650065098,
+      "cashAndCashEquivalents": 2225943732075,
+      "shortTermInvestments": 23260088671767,
+      "shortTermReceivables": 6233758612009,
+      "inventories": 5686840161996,
+      "nonCurrentAssets": 17495411471963,
+      "fixedAssets": 12550564799221,
+      "constructionInProgress": 1100250000000,
+      "totalLiabilities": 18874658707398,
+      "currentLiabilities": 18459546837640,
+      "shortTermBorrowings": 8620000000000,
+      "accountsPayable": 4321000000000,
+      "nonCurrentLiabilities": 415111869758,
+      "longTermBorrowings": 150000000000,
+      "equity": 36174402829663,
+      "charterCapital": 20899554450000,
+      "developmentInvestmentFund": 5580000000000,
+      "undistributedProfits": 3471224745772,
+      "operatingCashFlow": 9845000000000,
+      "debtToAssetsRatio": 0.3429,
+      "debtToEquityRatio": 0.5218,
+      "currentRatio": 2.03,
+      "quickRatio": 1.73,
+      "interestCoverageRatio": 44.2,
+      "eps": 4022,
+      "roe": 25.96,
+      "roa": 17.06
+    },
+    "interim2026": {
+      "period": "Lũy kế 6 tháng đầu năm 2026 (Bán niên soát xét)",
+      "netRevenue": 34996005336611,
+      "grossProfit": 15100012000000,
+      "grossMarginPercent": 43.15,
+      "financialIncome": 812757000000,
+      "financialExpenses": 301898000000,
+      "interestExpense": 115000000000,
+      "profitBeforeTax": 6913569170075,
+      "profitAfterTax": 5642622644280,
+      "parentProfitAfterTax": 5595750943516,
+      "q1Revenue": 16148657871623,
+      "q1ProfitAfterTax": 2458221002532,
+      "q2Revenue": 18847347464988,
+      "q2ProfitAfterTax": 3184401641748
     }
   },
   "loanProposal": {
-    "loanPurpose": "Tài trợ hạn mức vốn lưu động phục vụ hoạt động sản xuất kinh doanh sữa năm 2023-2024: Thu mua sữa tươi nguyên liệu từ mạng lưới nông hộ/trang trại sinh thái và nhập khẩu nguyên phụ liệu bột sữa chất lượng cao",
+    "loanPurpose": "Tài trợ hạn mức vốn lưu động phục vụ hoạt động sản xuất kinh doanh sữa niên độ 2025-2026: Thu mua sữa tươi nguyên liệu từ mạng lưới nông hộ/trang trại sinh thái và nhập khẩu nguyên phụ liệu bột sữa chất lượng cao",
     "creditMethod": "Cho vay theo hạn mức tín dụng (Vốn lưu động)",
     "proposedAmount": 3000000000000,
     "proposedAmountInWords": "Ba nghìn tỷ đồng",
@@ -186,7 +290,7 @@ window.VINAMILK_PROFILE_DATA = {
     "currency": "VND",
     "creditTermMonths": 12,
     "debtReceivingTermMax": 6,
-    "interestRate": "Lãi suất thả nổi cạnh tranh theo quy định hiện hành của Agribank dành cho khách hàng Doanh nghiệp lớn nhóm AAA (tại thời điểm đề xuất: 6.5%/năm)",
+    "interestRate": "Lãi suất thả nổi cạnh tranh theo quy định hiện hành của Agribank dành cho khách hàng Doanh nghiệp lớn nhóm AAA (tại thời điểm đề xuất niên độ 2026: 5.8%/năm)",
     "financingRatio": "Tối đa 70% tổng nhu cầu vốn lưu động hợp lý của chu kỳ sản xuất",
     "repaymentSource": "Dòng tiền thu từ bán hàng nội địa (kênh truyền thống GT, siêu thị MT, chuỗi cửa hàng Giấc mơ sữa Việt) và xuất khẩu sữa sang các thị trường Trung Đông, Trung Quốc, Đông Nam Á"
   },
@@ -219,8 +323,8 @@ window.VINAMILK_PROFILE_DATA = {
   "loanConditions": [
     {
       "type": "Tiên quyết (Trước khi ký HĐTD)",
-      "content": "Có Nghị quyết hợp lệ của Hội đồng Quản trị Vinamilk phê duyệt việc vay vốn hạn mức 3.000 tỷ VNĐ và thế chấp TSBĐ tại Agribank Chi nhánh TP.HCM",
-      "status": "Đã đáp ứng (Nghị quyết HĐQT số 12/NQ-CTS.HĐQT/2023)"
+      "content": "Có Nghị quyết hợp lệ của Hội đồng Quản trị Vinamilk phê duyệt việc vay vốn hạn mức 3.000 tỷ VNĐ và thế chấp TSBĐ tại Agribank Chi nhánh TP.HCM niên độ 2025-2026",
+      "status": "Đã đáp ứng (Nghị quyết HĐQT số 08/NQ-CTS.HĐQT/2026)"
     },
     {
       "type": "Trước khi giải ngân từng lần",
@@ -250,7 +354,7 @@ window.VINAMILK_PROFILE_DATA = {
       "documents": [
         {
           "code": "A.1.1",
-          "name": "Giấy chứng nhận đăng ký doanh nghiệp (ĐKKD lần 33)",
+          "name": "Giấy chứng nhận đăng ký doanh nghiệp (ĐKKD lần 34)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_A11_01.pdf",
           "size": "2.4 MB",
@@ -260,7 +364,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "A.1.2",
-          "name": "Giấy chứng nhận cơ sở đủ điều kiện ATVSTP & FSSC 22000",
+          "name": "Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam (Cập nhật 2025/2026)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_A12_01.pdf",
           "size": "2.23 MB (38 trang)",
@@ -300,7 +404,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "A.1.8",
-          "name": "Danh sách cổ đông lớn, HĐQT, Ban Điều hành (Báo cáo thường niên)",
+          "name": "Danh sách cổ đông lớn, HĐQT, Ban Điều hành (Báo cáo thường niên 2025)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_A18_01.pdf",
           "size": "1.92 MB (17 trang)",
@@ -310,7 +414,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "A.1.9",
-          "name": "Bảng kê khai thông tin về người có liên quan (35 công ty con)",
+          "name": "Báo cáo tình hình quản trị công ty 6 tháng đầu năm 2026 (HOSE)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_A19_01.pdf",
           "size": "1.92 MB (17 trang)",
@@ -336,7 +440,7 @@ window.VINAMILK_PROFILE_DATA = {
       "documents": [
         {
           "code": "B.1",
-          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2023 (KPMG kiểm toán)",
+          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2025 (KPMG kiểm toán)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_B1_01.pdf",
           "size": "7.80 MB (22 trang)",
@@ -345,8 +449,8 @@ window.VINAMILK_PROFILE_DATA = {
           "isOfficialPublicDoc": true
         },
         {
-          "code": "B.1_2022",
-          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2022 (KPMG kiểm toán)",
+          "code": "B.1_2024",
+          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2024 (KPMG kiểm toán)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_B1_02.pdf",
           "size": "7.26 MB (172 trang)",
@@ -356,7 +460,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "B.2",
-          "name": "Báo cáo tài chính hợp nhất Quý gần nhất",
+          "name": "Báo cáo tài chính hợp nhất bán niên soát xét 6 tháng đầu năm 2026",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_B2_01.pdf",
           "size": "7.80 MB (22 trang)",
@@ -366,7 +470,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "B.3",
-          "name": "Bảng kê chi tiết các khoản phải thu, hàng tồn kho >10% tổng tài sản",
+          "name": "Bảng kê chi tiết các khoản phải thu, hàng tồn kho niên độ 2025-2026",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_B3_01.pdf",
           "size": "2.7 MB",
@@ -382,7 +486,7 @@ window.VINAMILK_PROFILE_DATA = {
       "documents": [
         {
           "code": "C.I.1.1",
-          "name": "Phương án sử dụng vốn lưu động năm 2023-2024",
+          "name": "Phương án sử dụng vốn lưu động niên độ 2025-2026",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_CI11_01.pdf",
           "size": "3.5 MB",
@@ -392,7 +496,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "C.I.1.2",
-          "name": "Nghị quyết HĐQT Vinamilk phê duyệt vay vốn hạn mức tại Agribank",
+          "name": "Nghị quyết ĐHĐCĐ thường niên năm 2026 phê duyệt kế hoạch SXKD và cổ tức",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_CI12_01.pdf",
           "size": "1.24 MB (17 trang)",
@@ -464,7 +568,7 @@ window.VINAMILK_PROFILE_DATA = {
       "documents": [
         {
           "code": "E.1.1",
-          "name": "Bản in tra cứu thông tin CIC Doanh nghiệp Vinamilk",
+          "name": "Bản in tra cứu thông tin CIC Doanh nghiệp Vinamilk (Kỳ soát xét 2026)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_E11_01.pdf",
           "size": "1.4 MB",
@@ -474,7 +578,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "E.2",
-          "name": "Phiếu chấm điểm xếp hạng tín dụng nội bộ Agribank (Xếp hạng AAA)",
+          "name": "Phiếu chấm điểm xếp hạng tín dụng nội bộ Agribank niên độ 2026 (Xếp hạng AAA)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_E2_01.pdf",
           "size": "1.0 MB",
@@ -484,7 +588,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "E.3",
-          "name": "Báo cáo đề xuất cấp tín dụng hạn mức của Phòng KHDN",
+          "name": "Báo cáo đề xuất cấp tín dụng hạn mức niên độ 2026 của Phòng KHDN",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_E3_01.pdf",
           "size": "4.8 MB",
@@ -494,7 +598,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "E.4",
-          "name": "Biên bản họp Hội đồng tín dụng cơ sở Chi nhánh TP.HCM",
+          "name": "Biên bản họp Hội đồng tín dụng cơ sở Chi nhánh TP.HCM niên độ 2026",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_E4_01.pdf",
           "size": "1.8 MB",
@@ -504,7 +608,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "E.5",
-          "name": "Tờ trình phê duyệt khoản vay vượt thẩm quyền số 45/TTr-NHNo.HCM",
+          "name": "Tờ trình phê duyệt khoản vay vượt thẩm quyền số 58/TTr-NHNo.HCM niên độ 2026",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_E5_01.pdf",
           "size": "3.2 MB",
@@ -520,7 +624,7 @@ window.VINAMILK_PROFILE_DATA = {
       "documents": [
         {
           "code": "F.1",
-          "name": "Báo cáo thẩm định lại độc lập của Chuyên viên TTPD Miền Nam",
+          "name": "Báo cáo thẩm định lại độc lập của Chuyên viên TTPD Miền Nam (Kỳ 2026)",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_F1_01.pdf",
           "size": "5.6 MB",
@@ -540,7 +644,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "F.3",
-          "name": "Biên bản họp Hội đồng phê duyệt tín dụng TTPD Miền Nam số 89/BB-HĐPD",
+          "name": "Biên bản họp Hội đồng phê duyệt tín dụng TTPD Miền Nam số 115/BB-HĐPD",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_F3_01.pdf",
           "size": "2.0 MB",
@@ -550,7 +654,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "F.4",
-          "name": "Thông báo phê duyệt cấp tín dụng vượt thẩm quyền số 120/TB-TTPD",
+          "name": "Thông báo phê duyệt cấp tín dụng vượt thẩm quyền số 135/TB-TTPD",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_F4_01.pdf",
           "size": "2.6 MB",
@@ -612,7 +716,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "H.3",
-          "name": "Hợp đồng tín dụng hạn mức số 7900-LMS-2023/VNM và Hợp đồng thế chấp",
+          "name": "Hợp đồng tín dụng hạn mức số 7900-LMS-2026/VNM và Hợp đồng thế chấp",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_H3_01.pdf",
           "size": "6.8 MB",
@@ -638,7 +742,7 @@ window.VINAMILK_PROFILE_DATA = {
         },
         {
           "code": "I.3",
-          "name": "Báo cáo giám sát định kỳ chất lượng tín dụng quý 3/2023",
+          "name": "Báo cáo giám sát định kỳ chất lượng tín dụng niên độ 2026",
           "fileCount": 1,
           "fileName": "790000123DN0300588569_I3_01.pdf",
           "size": "1.7 MB",
@@ -688,89 +792,98 @@ window.VINAMILK_PROFILE_DATA = {
   ],
   "logs": [
     {
-      "time": "2023-04-15 08:30:00",
+      "time": "2026-04-15 08:30:00",
       "actor": "Trần Thanh Phong (CN)",
-      "action": "Khởi tạo hồ sơ tín dụng pháp nhân VNM"
+      "action": "Khởi tạo hồ sơ hạn mức tín dụng niên độ 2025-2026 pháp nhân VNM"
     },
     {
-      "time": "2023-04-18 14:20:00",
+      "time": "2026-04-18 14:20:00",
       "actor": "Nguyễn Hoàng Minh (GĐ CN)",
-      "action": "Ký Tờ trình vượt thẩm quyền và chuyển hồ sơ lên TTPD"
+      "action": "Ký Tờ trình vượt thẩm quyền số 58/TTr-NHNo.HCM và chuyển hồ sơ lên TTPD"
     },
     {
-      "time": "2023-04-20 09:15:00",
+      "time": "2026-04-20 09:15:00",
       "actor": "Đỗ Quang Vinh (TTPD)",
       "action": "Tiếp nhận hồ sơ và phân công Chuyên viên thẩm định lại Phạm Quốc Tuấn"
     },
     {
-      "time": "2023-04-23 16:45:00",
+      "time": "2026-04-23 16:45:00",
       "actor": "Phạm Quốc Tuấn (TTPD)",
-      "action": "Hoàn thành Báo cáo thẩm định lại độc lập, trình HĐTD"
+      "action": "Hoàn thành Báo cáo thẩm định lại độc lập căn cứ BCTC kiểm toán 2025 KPMG, trình HĐTD"
     },
     {
-      "time": "2023-04-25 10:00:00",
+      "time": "2026-04-25 10:00:00",
       "actor": "Hội đồng Tín dụng TTPD",
       "action": "Họp biểu quyết 5/5 chấp thuận cấp hạn mức 3.000 tỷ VNĐ"
     },
     {
-      "time": "2023-04-25 15:30:00",
+      "time": "2026-04-25 15:30:00",
       "actor": "Vũ Đình Trọng (Chủ tịch HĐTD)",
-      "action": "Ký ban hành Thông báo phê duyệt cấp tín dụng vượt thẩm quyền số 120/TB-TTPD"
+      "action": "Ký ban hành Thông báo phê duyệt cấp tín dụng vượt thẩm quyền số 135/TB-TTPD"
     }
   ],
   "publicDocuments": [
     {
-      "code": "A.1.2",
-      "name": "Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam",
-      "fileName": "VNM_Dieu_Le_Cong_Ty_CP_Sua_Viet_Nam.pdf",
-      "path": "public_documents/VNM_Dieu_Le_Cong_Ty_CP_Sua_Viet_Nam.pdf",
-      "pageCount": 38,
-      "size": "2.23 MB",
-      "source": "Công bố thông tin chính thức HOSE & Vinamilk IR"
-    },
-    {
       "code": "B.1",
-      "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2023",
-      "fileName": "VNM_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2023.pdf",
-      "path": "public_documents/VNM_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2023.pdf",
-      "pageCount": 22,
-      "size": "7.80 MB",
-      "source": "Kiểm toán độc lập KPMG Việt Nam - Công bố thông tin HOSE"
+      "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2025 (KPMG kiểm toán)",
+      "fileName": "VNM_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2025.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2025.pdf",
+      "pageCount": 24,
+      "size": "8.12 MB",
+      "source": "Kiểm toán độc lập KPMG Việt Nam - Công bố thông tin HOSE (03/2026)"
     },
     {
-      "code": "B.1_2022",
-      "name": "Báo cáo thường niên & Báo cáo tài chính kiểm toán năm 2022",
-      "fileName": "VNM_Bao_Cao_Thuong_Nien_Va_BCTC_Kiem_Toan_2022.pdf",
-      "path": "public_documents/VNM_Bao_Cao_Thuong_Nien_Va_BCTC_Kiem_Toan_2022.pdf",
-      "pageCount": 172,
-      "size": "7.26 MB",
-      "source": "Báo cáo thường niên chính thức công bố bởi Vinamilk"
+      "code": "B.2",
+      "name": "Báo cáo tài chính hợp nhất bán niên soát xét 6 tháng đầu năm 2026",
+      "fileName": "VNM_Bao_Cao_Tai_Chinh_Ban_Nien_Soat_Xet_2026.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Tai_Chinh_Ban_Nien_Soat_Xet_2026.pdf",
+      "pageCount": 20,
+      "size": "7.45 MB",
+      "source": "BCTC Soát xét bán niên 6T/2026 công bố chính thức HOSE (08/2026)"
+    },
+    {
+      "code": "B.1_TN",
+      "name": "Báo cáo thường niên & Quản trị phát triển bền vững năm 2025",
+      "fileName": "VNM_Bao_Cao_Thuong_Nien_2025.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Thuong_Nien_2025.pdf",
+      "pageCount": 185,
+      "size": "9.30 MB",
+      "source": "Báo cáo thường niên chính thức công bố bởi Vinamilk (03/2026)"
     },
     {
       "code": "A.1.8_A.1.9",
-      "name": "Báo cáo tình hình quản trị công ty năm 2023 (HĐQT, Cổ đông lớn, Người có liên quan)",
-      "fileName": "VNM_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2023.pdf",
-      "path": "public_documents/VNM_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2023.pdf",
-      "pageCount": 17,
-      "size": "1.92 MB",
-      "source": "Báo cáo quản trị công ty gửi UBCKNN & HOSE"
+      "name": "Báo cáo tình hình quản trị công ty 6 tháng đầu năm 2026 (HĐQT, Cổ đông lớn, Người có liên quan)",
+      "fileName": "VNM_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_6T2026.pdf",
+      "path": "public_documents/VNM_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_6T2026.pdf",
+      "pageCount": 19,
+      "size": "2.10 MB",
+      "source": "Báo cáo quản trị công ty gửi UBCKNN & HOSE (07/2026)"
     },
     {
       "code": "C.I.1.2",
-      "name": "Nghị quyết Đại hội đồng Cổ đông thường niên năm 2023 (Số 01/NQ-CTS.ĐHĐCĐ/2023)",
-      "fileName": "VNM_Nghi_Quyet_DHDCD_Thuong_Nien_2023.pdf",
-      "path": "public_documents/VNM_Nghi_Quyet_DHDCD_Thuong_Nien_2023.pdf",
-      "pageCount": 17,
-      "size": "1.24 MB",
-      "source": "Nghị quyết ĐHĐCĐ Vinamilk công bố chính thức"
+      "name": "Nghị quyết Đại hội đồng Cổ đông thường niên năm 2026 (Số 01/NQ-CTS.ĐHĐCĐ/2026)",
+      "fileName": "VNM_Nghi_Quyet_DHDCD_Thuong_Nien_2026.pdf",
+      "path": "public_documents/VNM_Nghi_Quyet_DHDCD_Thuong_Nien_2026.pdf",
+      "pageCount": 18,
+      "size": "1.35 MB",
+      "source": "Nghị quyết ĐHĐCĐ Vinamilk năm 2026 công bố chính thức"
+    },
+    {
+      "code": "A.1.2",
+      "name": "Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam (Bản sửa đổi cập nhật 2025/2026)",
+      "fileName": "VNM_Dieu_Le_Cong_Ty_CP_Sua_Viet_Nam_2025.pdf",
+      "path": "public_documents/VNM_Dieu_Le_Cong_Ty_CP_Sua_Viet_Nam_2025.pdf",
+      "pageCount": 42,
+      "size": "2.45 MB",
+      "source": "Công bố thông tin chính thức HOSE & Vinamilk IR"
     },
     {
       "code": "CBTT",
-      "name": "Bản công bố thông tin chính thức gửi UBCKNN & HOSE",
-      "fileName": "VNM_Cong_Bo_Thong_Tin_Chinh_Thuc_HOSE.pdf",
-      "path": "public_documents/VNM_Cong_Bo_Thong_Tin_Chinh_Thuc_HOSE.pdf",
-      "pageCount": 6,
-      "size": "1.86 MB",
+      "name": "Bản công bố thông tin chính thức gửi UBCKNN & HOSE (Niên độ 2025-2026)",
+      "fileName": "VNM_Cong_Bo_Thong_Tin_Chinh_Thuc_HOSE_2026.pdf",
+      "path": "public_documents/VNM_Cong_Bo_Thong_Tin_Chinh_Thuc_HOSE_2026.pdf",
+      "pageCount": 8,
+      "size": "2.05 MB",
       "source": "Hệ thống công bố thông tin Sở GDCK TP.HCM (HOSE)"
     }
   ]

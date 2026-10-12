@@ -182,15 +182,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // 5. Render Tab: Thông tin kinh tế (BusinessCreditReport)
   function renderBusinessCreditReport() {
     const f = data.financialReport;
-    const y23 = f.year2023;
-    const y22 = f.year2022;
+    const y25 = f.year2025 || f.year2023;
+    const y24 = f.year2024 || f.year2022;
+    const it26 = f.interim2026;
     const container = document.getElementById("TabBusinessCreditReportContent");
     if (!container) return;
 
     container.innerHTML = `
       <div style="background: #eef2f7; padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; border-left: 4px solid var(--primary);">
         <strong>Đơn vị kiểm toán độc lập:</strong> ${f.auditor} <br>
-        <strong>Ý kiến kiểm toán:</strong> <span class="badge badge-success">${f.auditOpinion}</span> | <strong>Ngày ký BCTC:</strong> ${f.auditDate}
+        <strong>Ý kiến kiểm toán:</strong> <span class="badge badge-success">${f.auditOpinion}</span> | <strong>Ngày ký BCTC kiểm toán 2025:</strong> ${f.auditDate} | <strong>Kỳ cập nhật:</strong> <span class="badge badge-primary">Niên độ 2025 - 2026</span>
       </div>
 
       <div class="form-grid-2">
@@ -200,105 +201,124 @@ document.addEventListener("DOMContentLoaded", function () {
             <thead>
               <tr>
                 <th>Chỉ tiêu tài chính</th>
-                <th class="text-right">Năm 2022</th>
-                <th class="text-right">Năm 2023 (Kiểm toán)</th>
+                <th class="text-right">Năm 2024</th>
+                <th class="text-right">Năm 2025 (Kiểm toán)</th>
+                <th class="text-right">6T/2026 (Soát xét)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>Doanh thu thuần</strong></td>
-                <td class="text-right">${formatShortBillion(y22.netRevenue)}</td>
-                <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y23.netRevenue)}</strong></td>
+                <td class="text-right">${formatShortBillion(y24.netRevenue)}</td>
+                <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y25.netRevenue)}</strong></td>
+                <td class="text-right"><strong style="color:#218838;">${it26 ? formatShortBillion(it26.netRevenue) : '-'}</strong></td>
               </tr>
               <tr>
                 <td>Giá vốn hàng bán</td>
-                <td class="text-right">-</td>
-                <td class="text-right">${formatShortBillion(y23.totalAssets ? 35789288000000 : 0)}</td>
+                <td class="text-right">${formatShortBillion(36192433000000)}</td>
+                <td class="text-right">${formatShortBillion(37436413000000)}</td>
+                <td class="text-right">${formatShortBillion(19896000000000)}</td>
               </tr>
               <tr>
                 <td><strong>Lợi nhuận gộp</strong></td>
-                <td class="text-right">${formatShortBillion(y22.grossProfit)}</td>
-                <td class="text-right"><strong>${formatShortBillion(y23.grossProfit)}</strong> (${y23.grossMarginPercent}%)</td>
+                <td class="text-right">${formatShortBillion(y24.grossProfit)} (${y24.grossMarginPercent}%)</td>
+                <td class="text-right"><strong>${formatShortBillion(y25.grossProfit)}</strong> (${y25.grossMarginPercent}%)</td>
+                <td class="text-right">${it26 ? formatShortBillion(it26.grossProfit) + ' (' + it26.grossMarginPercent + '%)' : '-'}</td>
               </tr>
               <tr>
                 <td>Doanh thu tài chính (Lãi tiền gửi)</td>
-                <td class="text-right">-</td>
-                <td class="text-right">${formatShortBillion(y23.financialIncome)}</td>
+                <td class="text-right">${formatShortBillion(y24.financialIncome)}</td>
+                <td class="text-right">${formatShortBillion(y25.financialIncome)}</td>
+                <td class="text-right">${it26 ? formatShortBillion(it26.financialIncome) : '-'}</td>
               </tr>
               <tr>
                 <td>Chi phí lãi vay ngân hàng</td>
-                <td class="text-right">-</td>
-                <td class="text-right">${formatShortBillion(y23.interestExpense)}</td>
+                <td class="text-right">${formatShortBillion(y24.interestExpense)}</td>
+                <td class="text-right">${formatShortBillion(y25.interestExpense)}</td>
+                <td class="text-right">${it26 ? formatShortBillion(it26.interestExpense) : '-'}</td>
               </tr>
               <tr>
                 <td><strong>Lợi nhuận trước thuế (LNTT)</strong></td>
-                <td class="text-right">${formatShortBillion(y22.profitBeforeTax)}</td>
-                <td class="text-right"><strong>${formatShortBillion(y23.profitBeforeTax)}</strong></td>
+                <td class="text-right">${formatShortBillion(y24.profitBeforeTax)}</td>
+                <td class="text-right"><strong>${formatShortBillion(y25.profitBeforeTax)}</strong></td>
+                <td class="text-right"><strong>${it26 ? formatShortBillion(it26.profitBeforeTax) : '-'}</strong></td>
               </tr>
               <tr style="background:#fcf1f3;">
                 <td><strong>LỢI NHUẬN SAU THUẾ (LNST)</strong></td>
-                <td class="text-right"><strong>${formatShortBillion(y22.profitAfterTax)}</strong></td>
-                <td class="text-right"><strong style="color:var(--primary); font-size:14px;">${formatShortBillion(y23.profitAfterTax)}</strong></td>
+                <td class="text-right"><strong>${formatShortBillion(y24.profitAfterTax)}</strong></td>
+                <td class="text-right"><strong style="color:var(--primary); font-size:14px;">${formatShortBillion(y25.profitAfterTax)}</strong></td>
+                <td class="text-right"><strong style="color:#218838; font-size:14px;">${it26 ? formatShortBillion(it26.profitAfterTax) : '-'}</strong></td>
+              </tr>
+              <tr>
+                <td>Lãi cơ bản trên cổ phiếu (EPS)</td>
+                <td class="text-right">4.022 đ</td>
+                <td class="text-right"><strong>4.028 đ</strong></td>
+                <td class="text-right">2.420 đ (6T)</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div>
-          <h4 style="margin-bottom: 10px; color: var(--primary);"><i class="fas fa-balance-scale"></i> Bảng cân đối kế toán & Khả năng thanh toán</h4>
+          <h4 style="margin-bottom: 10px; color: var(--primary);"><i class="fas fa-balance-scale"></i> Bảng cân đối kế toán & Khả năng thanh toán (2025-2026)</h4>
           <table class="data-table">
             <thead>
               <tr>
                 <th>Chỉ tiêu cân đối</th>
-                <th class="text-right">Giá trị (31/12/2023)</th>
+                <th class="text-right">Giá trị (31/12/2025)</th>
                 <th class="text-right">Tỷ trọng / Đánh giá</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>TỔNG TÀI SẢN</strong></td>
-                <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y23.totalAssets)}</strong></td>
-                <td class="text-right">100%</td>
+                <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y25.totalAssets)}</strong></td>
+                <td class="text-right">100% (Quy mô >53.000 tỷ)</td>
               </tr>
               <tr>
                 <td>- Tiền & Tiền gửi ngân hàng</td>
-                <td class="text-right"><strong>${formatShortBillion(y23.cashAndCashEquivalents + y23.shortTermInvestments)}</strong></td>
-                <td class="text-right">43.3% TTS (Rất dồi dào)</td>
+                <td class="text-right"><strong>${formatShortBillion(y25.cashAndCashEquivalents + y25.shortTermInvestments)}</strong></td>
+                <td class="text-right">43.4% TTS (Cực kỳ dồi dào)</td>
               </tr>
               <tr>
                 <td>- Phải thu ngắn hạn khách hàng</td>
-                <td class="text-right">${formatShortBillion(y23.shortTermReceivables)}</td>
-                <td class="text-right">11.5% TTS</td>
+                <td class="text-right">${formatShortBillion(y25.shortTermReceivables)}</td>
+                <td class="text-right">11.3% TTS (Quản trị tốt)</td>
               </tr>
               <tr>
                 <td>- Hàng tồn kho (nguyên liệu, thành phẩm)</td>
-                <td class="text-right">${formatShortBillion(y23.inventories)}</td>
-                <td class="text-right">10.6% TTS</td>
+                <td class="text-right">${formatShortBillion(y25.inventories)}</td>
+                <td class="text-right">12.8% TTS (Dự trữ an toàn)</td>
               </tr>
               <tr>
-                <td>- Tài sản cố định (nhà máy, đàn bò)</td>
-                <td class="text-right">${formatShortBillion(y23.fixedAssets)}</td>
-                <td class="text-right">26.8% TTS</td>
+                <td>- Tài sản cố định (nhà máy, trang trại)</td>
+                <td class="text-right">${formatShortBillion(y25.fixedAssets)}</td>
+                <td class="text-right">23.7% TTS</td>
               </tr>
               <tr>
                 <td><strong>NỢ PHẢI TRẢ</strong></td>
-                <td class="text-right"><strong>${formatShortBillion(y23.totalLiabilities)}</strong></td>
-                <td class="text-right"><span class="badge badge-success">Nợ/TTS: ${(y23.debtToAssetsRatio * 100).toFixed(1)}%</span></td>
+                <td class="text-right"><strong>${formatShortBillion(y25.totalLiabilities)}</strong></td>
+                <td class="text-right"><span class="badge badge-success">Nợ/TTS: ${(y25.debtToAssetsRatio * 100).toFixed(1)}% (Chuẩn AAA)</span></td>
               </tr>
               <tr>
                 <td>- Vay ngắn hạn ngân hàng</td>
-                <td class="text-right">${formatShortBillion(y23.shortTermBorrowings)}</td>
-                <td class="text-right">Tài trợ VLĐ mùa vụ</td>
+                <td class="text-right">${formatShortBillion(y25.shortTermBorrowings)}</td>
+                <td class="text-right">Tài trợ VLĐ chu kỳ sản xuất</td>
               </tr>
               <tr>
                 <td><strong>VỐN CHỦ SỞ HỮU</strong></td>
-                <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y23.equity)}</strong></td>
-                <td class="text-right"><span class="badge badge-success">VCSH/TTS: 67.2%</span></td>
+                <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y25.equity)}</strong></td>
+                <td class="text-right"><span class="badge badge-success">VCSH/TTS: 57.6%</span></td>
               </tr>
               <tr style="background:#e8f4ec;">
                 <td><strong>Dòng tiền thuần HĐKD (OCF)</strong></td>
-                <td class="text-right"><strong style="color:#218838;">+${formatShortBillion(y23.operatingCashFlow)}</strong></td>
-                <td class="text-right"><span class="badge badge-success">Thặng dư dòng tiền mạnh</span></td>
+                <td class="text-right"><strong style="color:#218838;">+${formatShortBillion(y25.operatingCashFlow)}</strong></td>
+                <td class="text-right"><span class="badge badge-success">Thặng dư >10.500 tỷ</span></td>
+              </tr>
+              <tr>
+                <td><strong>Hiệu quả sinh lời ROE / ROA</strong></td>
+                <td class="text-right"><strong>ROE: ${y25.roe}% | ROA: ${y25.roa}%</strong></td>
+                <td class="text-right"><span class="badge badge-primary">Hiệu quả sinh lời rất cao</span></td>
               </tr>
             </tbody>
           </table>
@@ -707,16 +727,16 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="background:#f8f9fa; border:1px solid #dee2e6; border-radius:6px; padding:12px 16px;">
           <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
             <strong style="color:var(--primary);"><i class="fas fa-comment-dots"></i> Phạm Quốc Tuấn (Chuyên viên TTPD Miền Nam)</strong>
-            <span class="text-muted" style="font-size:11px;">2023-04-21 10:15</span>
+            <span class="text-muted" style="font-size:11px;">2026-04-21 10:15</span>
           </div>
-          <p>Kính gửi Chi nhánh: Đề nghị Chi nhánh bổ sung làm rõ tỷ lệ doanh thu bán hàng xuất khẩu trong năm 2023 và danh mục nhà cung cấp nguyên liệu sữa nhập khẩu lớn nhất để TTPD thẩm tra dòng tiền ngoại tệ.</p>
+          <p>Kính gửi Chi nhánh: Đề nghị Chi nhánh làm rõ cơ cấu doanh thu và dòng tiền thuần HĐKD năm 2025 (đạt 10.520 tỷ VNĐ) cùng kế hoạch giải ngân vốn lưu động phục vụ xuất khẩu trong 6 tháng đầu năm 2026 để TTPD thẩm tra dòng tiền ngoại tệ.</p>
         </div>
         <div style="background:#fdf5f7; border:1px solid var(--primary-border); border-radius:6px; padding:12px 16px; margin-left: 24px;">
           <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
             <strong style="color:#218838;"><i class="fas fa-reply"></i> Trần Thanh Phong (CBTD Agribank CN TP.HCM)</strong>
-            <span class="text-muted" style="font-size:11px;">2023-04-21 15:40</span>
+            <span class="text-muted" style="font-size:11px;">2026-04-21 15:40</span>
           </div>
-          <p>Kính gửi TTPD: Chi nhánh đã liên hệ Kế toán trưởng Vinamilk và cập nhật Thuyết minh BCTC: Doanh thu xuất khẩu chiếm ~9.5% tổng doanh thu (~5.700 tỷ VNĐ), chủ yếu thị trường Trung Đông. Nhà cung cấp bao bì lớn nhất là Tetra Pak (Thụy Điển), nhà cung cấp bột sữa là Fonterra (New Zealand). Tài liệu chi tiết đã được tải lên tại Tab Hồ sơ đính kèm (Mục C.I.1.3).</p>
+          <p>Kính gửi TTPD: Chi nhánh đã làm việc với Ban Tài chính Vinamilk và cập nhật Thuyết minh BCTC kiểm toán 2025: Doanh thu thuần năm 2025 đạt 63.645,9 tỷ VNĐ (+3.0% YoY), dòng tiền kinh doanh thặng dư dồi dào, tiền và tiền gửi ngắn hạn đạt 23.150 tỷ VNĐ. Nhà cung cấp bao bì lớn nhất là Tetra Pak (Thụy Điển), bột sữa nguyên liệu từ Fonterra (New Zealand). Tài liệu chi tiết đã được tải lên tại Tab Hồ sơ đính kèm (Mục B.1 và C.I.1.3).</p>
         </div>
       </div>
     `;
@@ -772,13 +792,13 @@ document.addEventListener("DOMContentLoaded", function () {
             <tr>
               <td style="text-align: left; width: 50%; vertical-align: top; border: none; font-size: 11px;">
                 <strong>CÔNG TY CỔ PHẦN SỮA VIỆT NAM</strong><br>
-                Số: 12/2023/VNM-TC<br>
-                <i>V/v: Hồ sơ tín dụng Agribank</i>
+                Số: 15/2026/VNM-TC<br>
+                <i>V/v: Hồ sơ cấp tín dụng Agribank</i>
               </td>
               <td style="text-align: center; width: 50%; vertical-align: top; border: none; font-size: 11px;">
                 <strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong><br>
                 <u>Độc lập - Tự do - Hạnh phúc</u><br><br>
-                <i>TP. Hồ Chí Minh, ngày 15 tháng 04 năm 2023</i>
+                <i>TP. Hồ Chí Minh, ngày 15 tháng 04 năm 2026</i>
               </td>
             </tr>
           </table>
@@ -790,17 +810,20 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div style="font-size: 13px; line-height: 1.8; text-align: justify;">
-          <p><strong>Căn cứ:</strong> Giấy chứng nhận đăng ký doanh nghiệp số <strong>0300588569</strong> đăng ký thay đổi lần thứ 33 do Sở KH&ĐT TP.HCM cấp ngày 27/12/2022;</p>
-          <p><strong>Căn cứ:</strong> Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam thông qua ngày 26/04/2022;</p>
-          <p><strong>Căn cứ:</strong> Báo cáo tài chính hợp nhất kiểm toán năm 2023 thực hiện bởi Công ty TNHH KPMG Việt Nam.</p>
+          <p><strong>Căn cứ:</strong> Giấy chứng nhận đăng ký doanh nghiệp số <strong>0300588569</strong> đăng ký thay đổi lần thứ 34 do Sở KH&ĐT TP.HCM cấp ngày 25/06/2024;</p>
+          <p><strong>Căn cứ:</strong> Điều lệ tổ chức và hoạt động Công ty Cổ phần Sữa Việt Nam cập nhật thông qua theo Nghị quyết ĐHĐCĐ;</p>
+          <p><strong>Căn cứ:</strong> Báo cáo tài chính hợp nhất kiểm toán năm 2025 thực hiện bởi Công ty TNHH KPMG Việt Nam (Ý kiến chấp nhận toàn phần);</p>
+          <p><strong>Căn cứ:</strong> Báo cáo tài chính hợp nhất bán niên soát xét 6 tháng đầu năm 2026 công bố chính thức trên HOSE.</p>
           <hr style="margin: 15px 0; border: none; border-top: 1px dashed #ccc;">
           <p><strong>Thông tin chính thức:</strong></p>
           <ul>
             <li>Tên khách hàng vay: <strong>CÔNG TY CỔ PHẦN SỮA VIỆT NAM (VINAMILK)</strong></li>
             <li>Địa chỉ: Số 10 Tân Trào, Phường Tân Phú, Quận 7, TP. Hồ Chí Minh</li>
             <li>Vốn điều lệ: <strong>20.899.554.450.000 VNĐ</strong></li>
-            <li>Doanh thu thuần năm 2023: <strong>60.374.459 triệu VNĐ</strong></li>
-            <li>Lợi nhuận sau thuế: <strong>9.019.467 triệu VNĐ</strong></li>
+            <li>Doanh thu thuần năm 2025 (Kiểm toán): <strong>63.645.887 triệu VNĐ</strong></li>
+            <li>Lợi nhuận sau thuế năm 2025: <strong>9.413.590 triệu VNĐ</strong> (ROE: 30,67%)</li>
+            <li>Doanh thu thuần lũy kế 6T/2026: <strong>34.996.005 triệu VNĐ</strong> (LNST: 5.642.623 triệu VNĐ)</li>
+            <li>Tiền & Đầu tư tài chính ngắn hạn (31/12/2025): <strong>23.149.743 triệu VNĐ</strong></li>
             <li>Đề nghị vay vốn: Hạn mức vốn lưu động <strong>3.000.000.000.000 VNĐ</strong> tại Agribank Chi nhánh TP.HCM</li>
           </ul>
         </div>
