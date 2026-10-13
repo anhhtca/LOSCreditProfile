@@ -1,6 +1,8 @@
 // App logic cho Review Hồ sơ Tín dụng Vinamilk (LOSCreditProfile)
 document.addEventListener("DOMContentLoaded", function () {
-  const data = window.VINAMILK_PROFILE_DATA;
+  const data =
+    window.VINAMILK_PROFILE_DATA ||
+    (typeof vinamilkProfileData !== "undefined" ? vinamilkProfileData : null);
   if (!data) {
     console.error("Không tìm thấy dữ liệu VINAMILK_PROFILE_DATA");
     return;
@@ -15,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function formatShortBillion(num) {
     if (!num) return "-";
     const bil = num / 1000000000;
-    return bil.toLocaleString("vi-VN", { maximumFractionDigits: 1 }) + " tỷ VNĐ";
+    return (
+      bil.toLocaleString("vi-VN", { maximumFractionDigits: 1 }) + " tỷ VNĐ"
+    );
   }
 
   // 1. Tab switching
@@ -71,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <td>${r.idIssueDate} (${r.idIssuePlace})</td>
           <td><span class="badge badge-primary">${r.roleInLoan}</span></td>
         </tr>
-      `
+      `,
       )
       .join("");
 
@@ -85,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <td class="text-right">${sh.shares.toLocaleString("vi-VN")} CP</td>
           <td class="text-right"><strong>${sh.percent.toFixed(2)}%</strong></td>
         </tr>
-      `
+      `,
       )
       .join("");
 
@@ -98,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <td>${rp.relation}</td>
           <td class="text-right">${rp.ownershipPercent}%</td>
         </tr>
-      `
+      `,
       )
       .join("");
 
@@ -150,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <tbody>${repsHtml}</tbody>
       </table>
 
-      <h4 style="margin: 24px 0 10px; color: var(--primary);"><i class="fas fa-chart-pie"></i> 2. Cơ cấu Cổ đông lớn (Nắm giữ $\\ge 5\\%$)</h4>
+      <h4 style="margin: 24px 0 10px; color: var(--primary);"><i class="fas fa-chart-pie"></i> 2. Cơ cấu Cổ đông lớn (Nắm giữ &ge; 5%)</h4>
       <table class="data-table">
         <thead>
           <tr>
@@ -211,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td><strong>Doanh thu thuần</strong></td>
                 <td class="text-right">${formatShortBillion(y24.netRevenue)}</td>
                 <td class="text-right"><strong style="color:var(--primary);">${formatShortBillion(y25.netRevenue)}</strong></td>
-                <td class="text-right"><strong style="color:#218838;">${it26 ? formatShortBillion(it26.netRevenue) : '-'}</strong></td>
+                <td class="text-right"><strong style="color:#218838;">${it26 ? formatShortBillion(it26.netRevenue) : "-"}</strong></td>
               </tr>
               <tr>
                 <td>Giá vốn hàng bán</td>
@@ -223,31 +227,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td><strong>Lợi nhuận gộp</strong></td>
                 <td class="text-right">${formatShortBillion(y24.grossProfit)} (${y24.grossMarginPercent}%)</td>
                 <td class="text-right"><strong>${formatShortBillion(y25.grossProfit)}</strong> (${y25.grossMarginPercent}%)</td>
-                <td class="text-right">${it26 ? formatShortBillion(it26.grossProfit) + ' (' + it26.grossMarginPercent + '%)' : '-'}</td>
+                <td class="text-right">${it26 ? formatShortBillion(it26.grossProfit) + " (" + it26.grossMarginPercent + "%)" : "-"}</td>
               </tr>
               <tr>
                 <td>Doanh thu tài chính (Lãi tiền gửi)</td>
                 <td class="text-right">${formatShortBillion(y24.financialIncome)}</td>
                 <td class="text-right">${formatShortBillion(y25.financialIncome)}</td>
-                <td class="text-right">${it26 ? formatShortBillion(it26.financialIncome) : '-'}</td>
+                <td class="text-right">${it26 ? formatShortBillion(it26.financialIncome) : "-"}</td>
               </tr>
               <tr>
                 <td>Chi phí lãi vay ngân hàng</td>
                 <td class="text-right">${formatShortBillion(y24.interestExpense)}</td>
                 <td class="text-right">${formatShortBillion(y25.interestExpense)}</td>
-                <td class="text-right">${it26 ? formatShortBillion(it26.interestExpense) : '-'}</td>
+                <td class="text-right">${it26 ? formatShortBillion(it26.interestExpense) : "-"}</td>
               </tr>
               <tr>
                 <td><strong>Lợi nhuận trước thuế (LNTT)</strong></td>
                 <td class="text-right">${formatShortBillion(y24.profitBeforeTax)}</td>
                 <td class="text-right"><strong>${formatShortBillion(y25.profitBeforeTax)}</strong></td>
-                <td class="text-right"><strong>${it26 ? formatShortBillion(it26.profitBeforeTax) : '-'}</strong></td>
+                <td class="text-right"><strong>${it26 ? formatShortBillion(it26.profitBeforeTax) : "-"}</strong></td>
               </tr>
               <tr style="background:#fcf1f3;">
                 <td><strong>LỢI NHUẬN SAU THUẾ (LNST)</strong></td>
                 <td class="text-right"><strong>${formatShortBillion(y24.profitAfterTax)}</strong></td>
                 <td class="text-right"><strong style="color:var(--primary); font-size:14px;">${formatShortBillion(y25.profitAfterTax)}</strong></td>
-                <td class="text-right"><strong style="color:#218838; font-size:14px;">${it26 ? formatShortBillion(it26.profitAfterTax) : '-'}</strong></td>
+                <td class="text-right"><strong style="color:#218838; font-size:14px;">${it26 ? formatShortBillion(it26.profitAfterTax) : "-"}</strong></td>
               </tr>
               <tr>
                 <td>Lãi cơ bản trên cổ phiếu (EPS)</td>
@@ -377,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <td class="text-right"><strong style="color:#218838;">${formatShortBillion(a.acceptedCreditValue)}</strong></td>
           <td><small>${a.insuranceStatus}</small></td>
         </tr>
-      `
+      `,
       )
       .join("");
 
@@ -526,7 +530,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <td><strong>${c.content}</strong></td>
           <td width="180"><span class="badge badge-success"><i class="fas fa-check-circle"></i> ${c.status}</span></td>
         </tr>
-      `
+      `,
       )
       .join("");
 
@@ -584,7 +588,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </td>
           </tr>
-        `
+        `,
         )
         .join("");
 
@@ -620,27 +624,28 @@ document.addEventListener("DOMContentLoaded", function () {
     let html = publicDocsHtml;
     tree.forEach((cat) => {
       let docRows = cat.documents
-        .map(
-          (d) => {
-            const folderMap = {
-              "A": "A_Ho_So_Phap_Ly",
-              "B": "B_Ho_So_Kinh_Te",
-              "C": "C_Ho_So_Vay_Von",
-              "D": "D_Ho_So_Tai_San_Bao_Dam",
-              "E": "E_Ho_So_Chi_Nhanh_Lap",
-              "F": "F_Ho_So_TTPD_Lap",
-              "G": "G_Thong_Bao_Thu_Cong_Tac",
-              "H": "H_Ho_So_Giai_Ngan",
-              "I": "I_Ho_So_Quan_Ly_No"
-            };
-            const catFolder = folderMap[cat.code];
-            const pdfPath = catFolder ? `documents/7900.001.23.DN.0300588569/${catFolder}/${d.fileName}` : null;
-            return `
+        .map((d) => {
+          const folderMap = {
+            A: "A_Ho_So_Phap_Ly",
+            B: "B_Ho_So_Kinh_Te",
+            C: "C_Ho_So_Vay_Von",
+            D: "D_Ho_So_Tai_San_Bao_Dam",
+            E: "E_Ho_So_Chi_Nhanh_Lap",
+            F: "F_Ho_So_TTPD_Lap",
+            G: "G_Thong_Bao_Thu_Cong_Tac",
+            H: "H_Ho_So_Giai_Ngan",
+            I: "I_Ho_So_Quan_Ly_No",
+          };
+          const catFolder = folderMap[cat.code];
+          const pdfPath = catFolder
+            ? `documents/7900.001.23.DN.0300588569/${catFolder}/${d.fileName}`
+            : null;
+          return `
           <tr>
             <td width="90"><code>${d.code}</code></td>
             <td>
               <strong>${d.name}</strong>
-              ${d.size ? `<br><small class="text-muted"><i class="far fa-file-alt"></i> ${d.size}</small>` : ''}
+              ${d.size ? `<br><small class="text-muted"><i class="far fa-file-alt"></i> ${d.size}</small>` : ""}
             </td>
             <td class="text-center" width="70"><span class="badge badge-secondary">${d.fileCount} file</span></td>
             <td><i class="far fa-file-pdf text-danger"></i> <span style="font-family: monospace; font-size: 11.5px;">${d.fileName}</span></td>
@@ -669,8 +674,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </td>
           </tr>
         `;
-          }
-        )
+        })
         .join("");
 
       html += `
@@ -741,8 +745,6 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
   }
-
-
 
   // 14. Scan Preview & PDF Modal Logic
   const modal = document.getElementById("previewModal");
@@ -877,7 +879,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const exportBtn = document.getElementById("btnExportJson");
   if (exportBtn) {
     exportBtn.addEventListener("click", function () {
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
+      const dataStr =
+        "data:text/json;charset=utf-8," +
+        encodeURIComponent(JSON.stringify(data, null, 2));
       const downloadAnchor = document.createElement("a");
       downloadAnchor.setAttribute("href", dataStr);
       downloadAnchor.setAttribute("download", "vinamilk_profile_data.json");
@@ -899,7 +903,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const publicDocsBtn = document.getElementById("btnGoToPublicDocs");
   if (publicDocsBtn) {
     publicDocsBtn.addEventListener("click", function () {
-      const docTabBtn = document.querySelector('.tab-btn[data-tab="tab-documents"]');
+      const docTabBtn = document.querySelector(
+        '.tab-btn[data-tab="tab-documents"]',
+      );
       if (docTabBtn) docTabBtn.click();
       const storageBox = document.getElementById("public-docs-storage");
       if (storageBox) {
